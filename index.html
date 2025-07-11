@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reproductor de Música - Kapoone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Menú fijo lateral activado con checkbox -->
+  <input type="checkbox" id="btn-menu" />
+
+  <header class="header">
+    <div class="container">
+      <div class="btn-menu">
+        <label for="btn-menu"><i class="bi bi-list"></i></label>
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <h1>KAP◖⁠⚆⁠ᴥ⁠⚆⁠◗NE</h1>
+        </a>
+      </div>
+      <nav class="menu">
+        <a href="#inicio"><i class="bi bi-house-fill"></i>Inicio</a>
+        <a href="/5202/5202.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="20" height="20" fill="currentColor" style="vertical-align: middle; margin-right: 5px;">
+            <path d="M0 224c0-53 43-96 96-96h32l16-32 64 96h64l-32-64 64 32 64-32-32 64h64l64-96 16 32h32c53 0 96 43 96 96v64l-64 32v-48l-64 32-64-32-32 64-32-64-64 32-64-32-32 64-32-64-64 32-64-32v48l-64-32v-64z" />
+          </svg>
+          Duk✪⁠⁠✪ - 5202
+        </a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Menú lateral oculto -->
+  <div class="container-menu">
+    <div class="cont-menu">
+      <nav>
+        <a href="Canal.html"><i class="bi bi-youtube"></i> Suscríbete</a>
+        <a href="Redes.html"><i class="bi bi-instagram"></i> Redes Sociales</a>
+        <a href="CrearCuenta.html"><i class="bi bi-person-add"></i> Registrarse</a>
+        <a href="MiCuenta.html"><i class="bi bi-person-circle"></i> Mi Cuenta</a>
+        <a href="Iniciasesion.html"><i class="bi bi-box-arrow-in-right"></i> Iniciar Sesión</a>
+      </nav>
+      <label for="btn-menu" class="close-menu">Salir <i class="bi bi-x-circle"></i></label>
+    </div>
+  </div>
+
+  <div class="capa"></div>
+
+  <main>
+    <section class="reproductor-musica">
+      <h1>Titulo</h1>
+      <p>Nombre</p>
+      <audio id="cancion">
+        <source src="" type="audio/mpeg" />
+      </audio>
+      <input step="0.01" type="range" value="0.0" id="progreso" />
+      <div class="controles">
+        <button class="boton-aleatorio control"><i class="bi bi-shuffle"></i></button>
+        <button class="atras control"><i class="bi bi-rewind-fill"></i></button>
+        <button class="boton-reproducir-pausar iconoControl">
+          <i class="bi bi-play-fill" id="iconoControl"></i>
+        </button>
+        <button class="adelante control"><i class="bi bi-fast-forward-fill"></i></button>
+        <button class="boton-repetir"><i class="bi bi-repeat" id="repetir"></i></button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Kapoone Produce. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
